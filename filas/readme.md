@@ -4,7 +4,7 @@
 
 ## Visão Geral
 
-Bem-vindo ao README.md sobre filas! Neste documento, vamos explorar o conceito de filas, suas características e usos comuns, incluindo filas circulares.
+Bem-vindo ao README.md sobre filas! Neste documento, vamos explorar o conceito de filas, suas características e usos comuns, incluindo filas de prioridades, deques e filas circulares.
 
 ## O que são Filas?
 
@@ -20,9 +20,17 @@ Filas são estruturas de dados lineares que seguem o princípio FIFO (First In, 
 
 Filas circulares são um tipo especial de fila em que o último elemento está ligado ao primeiro elemento, formando um círculo. Isso permite que a fila continue a aceitar novos elementos mesmo que haja espaços disponíveis após a remoção de elementos. As filas circulares são especialmente úteis em situações em que a memória é limitada ou quando é necessário um acesso rápido e eficiente aos elementos da fila.
 
+## Filas de Prioridades
+
+Filas de prioridades são estruturas de dados onde cada elemento possui uma prioridade associada. Os elementos são removidos da fila com base em suas prioridades, onde o elemento com a maior prioridade é removido primeiro. As filas de prioridades são comumente implementadas utilizando heaps, uma estrutura de dados binária que mantém a propriedade de heap.
+
+## Deques
+
+Deques, ou double-ended queues, são estruturas de dados que permitem a inserção e remoção de elementos em ambas as extremidades da fila. Isso significa que os elementos podem ser adicionados ou removidos tanto no início quanto no final da fila. Deques combinam as características de pilhas e filas em uma única estrutura de dados versátil.
+
 ## Usos Comuns
 
-As filas, incluindo filas circulares, são amplamente utilizadas em várias aplicações, incluindo:
+As filas, incluindo filas de prioridades, deques e filas circulares, são amplamente utilizadas em várias aplicações, incluindo:
 
 - **Gerenciamento de Recursos:** Filas são usadas para gerenciar recursos compartilhados entre processos ou threads, garantindo um acesso justo e ordenado.
 - **Buffers e Filas de Mensagens:** Filas são usadas para implementar buffers e filas de mensagens em sistemas de comunicação, garantindo uma entrega ordenada de mensagens.
@@ -30,4 +38,4 @@ As filas, incluindo filas circulares, são amplamente utilizadas em várias apli
 
 ## Escolhendo o Uso de Filas
 
-A escolha de usar filas, incluindo filas circulares, depende das necessidades específicas do problema em questão. Se a ordem de processamento dos elementos segue o princípio FIFO e se as operações principais são inserção e remoção, então uma fila pode ser uma escolha adequada para a implementação.
+A escolha de usar filas, incluindo filas de prioridades, deques e filas circulares, depende das necessidades específicas do problema em questão. Se a ordem de processamento dos elementos segue o princípio FIFO ou se os elementos possuem prioridades associadas, então uma fila de prioridades pode ser uma escolha adequada. Se é necessário acesso rápido aos elementos em ambas as extremidades da fila, então um deque pode ser a melhor opção.
